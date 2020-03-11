@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Table,Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import { Row,Col,Container,ButtonGroup, Table,Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
 
 function App() {
   return (
@@ -31,48 +31,95 @@ function App() {
           <Table striped bordered hover>
       <thead>
         <tr>
-          <th>#</th>
-          <th colspan="2">First Name</th>
-          <th>Username</th>
+          <th>Name</th>
+          <th colspan="3">Descriptions</th>
+          <th>Basket Full info</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Item</td>
-          <td colspan="2">Mark</td>
+          <td colspan="3">Mark</td>
           <td>
-          <Button variant="primary">Basket</Button>
+          <ButtonGroup className="mr-2" aria-label="First group">
+            <Button variant="primary">Basket</Button>
+          </ButtonGroup>
+          <ButtonGroup className="mr-2" aria-label="Second group">
+            <Button variant="info">Info</Button>
+          </ButtonGroup>
           </td>
         </tr>
         <tr>
           <td>Item</td>
-          <td colspan="2">Description</td>
-          <td><Button variant="primary">Basket</Button></td>
+          <td colspan="3">Description</td>
+          <td>
+          <ButtonGroup className="mr-2" aria-label="First group">
+            <Button variant="primary">Basket</Button>
+          </ButtonGroup>
+          <ButtonGroup className="mr-2" aria-label="Second group">
+            <Button variant="info">Info</Button>
+          </ButtonGroup>
+          </td>
         </tr>
         <tr>
           <td>Item</td>
-          <td colspan="2">Description</td>
-          <td><Button variant="primary">Basket</Button></td>
+          <td colspan="3">Description</td>
+          <td>
+          <ButtonGroup className="mr-2" aria-label="First group">
+            <Button variant="primary">Basket</Button>
+          </ButtonGroup>
+          <ButtonGroup className="mr-2" aria-label="Second group">
+            <Button variant="info">Info</Button>
+          </ButtonGroup>
+          </td>
         </tr>
         <tr>
           <td>Item</td>
-          <td colspan="2">Description</td>
-          <td><Button variant="primary">Basket</Button></td>
+          <td colspan="3">Description</td>
+          <td>
+          <ButtonGroup className="mr-2" aria-label="First group">
+            <Button variant="primary">Basket</Button>
+          </ButtonGroup>
+          <ButtonGroup className="mr-2" aria-label="Second group">
+            <Button variant="info">Info</Button>
+          </ButtonGroup>
+          </td>
         </tr>
         <tr>
           <td>Item</td>
-          <td colspan="2">Description</td>
-          <td><Button variant="primary">Basket</Button></td>
+          <td colspan="3">Description</td>
+          <td>
+          <ButtonGroup className="mr-2" aria-label="First group">
+            <Button variant="primary">Basket</Button>
+          </ButtonGroup>
+          <ButtonGroup className="mr-2" aria-label="Second group">
+            <Button variant="info">Info</Button>
+          </ButtonGroup>
+          </td>
         </tr>
         <tr>
           <td>Item</td>
-          <td colspan="2">Description</td>
-          <td><Button variant="primary">Basket</Button></td>
+          <td colspan="3">Description</td>
+          <td>
+          <ButtonGroup className="mr-2" aria-label="First group">
+            <Button variant="primary">Basket</Button>
+           </ButtonGroup>
+           <ButtonGroup className="mr-2" aria-label="Second group">
+            <Button variant="info">Info</Button>
+          </ButtonGroup>
+          </td>
         </tr>
         <tr>
           <td>Item</td>
-          <td colspan="2">Description</td>
-          <td><Button variant="primary">Basket</Button></td>
+          <td colspan="3">Description</td>
+          <td>
+          <ButtonGroup className="mr-2" aria-label="First group">
+            <Button variant="primary">Basket</Button>
+            </ButtonGroup>
+            <ButtonGroup className="mr-2" aria-label="Second group">
+            <Button variant="info">Info</Button>
+          </ButtonGroup>
+          </td>
         </tr>
       </tbody>
     </Table>
@@ -90,6 +137,18 @@ function App() {
           Learn React
         </a>
       </header>
+      <Container>
+  <Row>
+    <Col>1 of 2</Col>
+    <Col>2 of 3</Col>
+    <Col>3 of 3</Col>
+  </Row>
+  <Row>
+    <Col>1 of 3</Col>
+    <Col>2 of 3</Col>
+    <Col>3 of 3</Col>
+  </Row>
+</Container>
     </div>
   );
 }
